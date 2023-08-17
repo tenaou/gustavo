@@ -1,48 +1,58 @@
 <!DOCTYPE html>
-<html lang="PT-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=>, initial-scale=1.0">
-    <title>Document</title>
- <link rel="stylesheet" href="gustavo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
 </head>
-
 <body>
-
     <header class="cabecalho">
-        <h1> TITULO PRINCIPAL</h1>
-        <nav>
-            <ul>
-                <li><a href="https://github.com/tenaou/gustavo/edit/main"> Contato Github </a> </li>
-                <li><a href="gustavo.html"> Página inicial </a></li>
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu">
+                <span class="cabecalho__menu-hamburguer container__imagem"></span>
+            </label>
+            <ul class="lista-menu">
+                    <li class="lista-menu__titulo">Categorias</li>
+                    <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Aventura</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Biografia</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Ficção</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Romance</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Vestibular</a>
+                </li>
+
             </ul>
-        </nav>
-        <img src="" alt="">
-    </header>
-        <h2> TITULO SECUNDÁRIO </h2>
-        <p class="paragrafo1"> PARÁGRAFO 1 </p>
-        <div class="paragrafos">
-        <p> parágrafo 2</p>
-        <p> parágrafo 3</p>
+            <img src="img/Logo.svg" alt="Logo Biblioteca" class="container__imagem">
         </div>
-        <p> parágrafo 4 </p>
-        <p> parágrafo 5</p>
-        <h3> título terciário </h3>
-        <a href="LINK DO SITE"> clique aqui para acessar o site </a>
-        <ul class="lista">
-            <li> item 1 </li>
-                <li> item 2 </li>
-                <li>item 3</li>
-                </ul>
-    <img class="imagem" src="" alt="">
+        <div class="container">
+            <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos" class="container__imagem"></a>
+            <a href="#"><img src="img/Emprestimos.svg" alt="Meus empréstimos" class="container__imagem"></a>
+            <a href="#"><img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem"></a>
+        </div>
+    </header>
+
+    <section class="banner">
+        <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+        <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+        <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
+        
+
+    </section>
 </body>
-
-<footer>
-    Rodapé
-</footer>
-
-<dialog open>
-    <p> Olá, visitante! Seja bem vindo</p>
-</dialog>
 </html>
