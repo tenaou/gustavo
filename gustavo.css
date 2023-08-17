@@ -1,34 +1,18 @@
-.cabecalho
-{
-    background-color: aqua
+@import url(styles/header.css);
+@import url(styles/banner.css);
+
+:root{
+    --cor-de-fundo:#EBECEE;
+    --branco:#FFFFFF;
+    --amarelo:#FECD2F;
+    --roxo:#800080;
+    --fonte-principal: "Poppins";
+
 }
-h1 {
-    text-align: center;
-}
-h2 {
-    background-color: blueviolet;
-}
-h3{
-    padding-left: 10%;
-}
-.imagem{
-    width: 20px;
-    background-image: linear-gradient(#383d58);
-}
-p {
-    font-size: 20px
-}
-.paragrafo1 {
- font-size:30px;
- padding-top: 5%;
-}
-.paragrafos {
+
+body{
+    background-color:var(--cor-de-fundo);
+    font-family: var(--fonte-principal) ;
     font-size: 16px;
-}
-.lista {
-    display: inline-block;
-    margin: 0 16px
-}
-footer{
-    background-color: black;
+    font-weight:400;
 }
